@@ -1,0 +1,1151 @@
+#main-header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  z-index: 1000;
+}
+
+#sticky-header {
+  position: fixed;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  transition: top 0.8s ease;
+  z-index: 999;
+}
+
+#sticky-header.visible {
+  top: 0;
+}
+
+.hover-border {
+  border-bottom: 5px solid transparent;
+  padding: 20px 0;
+}
+
+.hover-border.hovered {
+  border-bottom: 5px solid #454f5e;
+}
+
+#slideshow {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.image-visible {
+  opacity: 1;
+}
+
+/*CSS*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  color: black;
+  background: #3aa6b9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.body {
+  font-family: "Noto Sans";
+}
+
+.container h1 {
+  font-size: 60px;
+}
+
+.blog-container h2,
+.container h2,
+.company h2 {
+  font-size: 48px;
+}
+
+.container h3 {
+  font-size: 32px;
+  margin-top: 30px;
+}
+
+.blog-content h4,
+.recruit h4,
+.about h4 {
+  font-size: 34px;
+}
+
+.lightgray-text {
+  font-weight: right;
+  color: #e0e0e0;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 20%;
+  padding-top: 15px;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 200px;
+  min-width: 130px;
+  height: auto;
+  object-fit: contain;
+  margin-left: 30px;
+}
+
+.navigation {
+  width: 100%;
+  height: 100%;
+  max-height: 45vh;
+}
+
+.navigation ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+.navigation li {
+  min-width: 70px;
+  height: auto;
+  padding: 10px 0;
+}
+
+.navigation a {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+.hamburger-menu-empty {
+  width: 0;
+}
+
+#menu-toggle,
+#JS-menu-toggle {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+.top-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top .top-wrapper {
+  height: 100vh;
+}
+
+.top .top-wrapper .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.heading-title h3 {
+  color: #37d998;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.copy {
+  color: #3ff4ac;
+  font-weight: bold;
+  font-size: 90px;
+  margin: 0 auto;
+}
+
+.separator {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.line {
+  display: inline-block;
+  width: 5%;
+  min-width: 40px;
+  height: 2px;
+  background-color: #3aa6b9;
+}
+
+.top-wrapper .line {
+  margin-top: 50px;
+}
+
+.btn {
+  padding: 15px 40px;
+  text-align: center;
+  background-color: #3aa6b9;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.btn:hover {
+  background-color: #2997aa;
+}
+
+.aboutus {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../images/office1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hr-domain {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hr-domain .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../images/HR領域.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(70%);
+  z-index: 1;
+}
+
+.hr-domain .container {
+  max-width: 480px;
+  z-index: 2;
+}
+.hr-domain .lightgray-text {
+  text-align: start;
+  margin-top: 30px;
+}
+
+.tech-domain .lightgray-text {
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+  margin-top: 30px;
+}
+
+.tech-domain {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(../images/テクノロジー４.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.company-content {
+  height: 35vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.company-content .background {
+  background-image: url(../images/LINE_ALBUM_2023.8-新オフィスでの撮影_231024.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.company-content .container {
+  text-align: right;
+  max-width: 1100px;
+  position: relative;
+  z-index: 2;
+}
+
+#company-btn {
+  font-size: 18px;
+}
+#company-btn span {
+  color: #fff;
+  padding-left: 15px;
+}
+
+.blog-content {
+  background-color: #e9f8f9;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px 10px;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.slider {
+  width: 100%;
+  position: relative;
+}
+
+.blog-slide {
+  flex: 0 0 33.333%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slide-first {
+  background-image: url(../images/5f7921773127cab1a882b74fe21ded8e-1024x576.jpg);
+}
+
+.slider-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+}
+
+.slider-nav label {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider-arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.slider-arrow-left {
+  position: absolute;
+  top: -25px;
+  left: 10px;
+  font-size: 25px;
+}
+
+.slider-arrow-right {
+  position: absolute;
+  top: -25px;
+  right: 10px;
+  font-size: 25px;
+}
+
+.blog-content .btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 15px 30px;
+  margin-top: 15px;
+}
+
+.recruit {
+  background-color: #e9f8f9;
+  height: 80vh;
+}
+
+.recruit .line,
+.service .line {
+  width: 80px;
+  height: 3px;
+}
+.recruitment-information-image {
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  width: 650px;
+  height: 480px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recruit img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #282d37;
+  height: 25vh;
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  display: block;
+  width: 200px;
+  margin-bottom: 20px;
+}
+.footer-list {
+  text-align: center;
+}
+
+.footer-list li {
+  list-style: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.footer-list span {
+  color: #fff;
+  margin-right: 15px;
+}
+
+.footer-list li:hover {
+  color: #fff;
+}
+
+.about .top-wrapper p,
+.service .top-wrapper p,
+.company .top-wrapper p,
+.contact .top-wrapper p {
+  font-size: 60px;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.about .top-wrapper {
+  background-image: url(../images/10周年記念パーティー.png);
+  height: 60vh;
+  color: #fff;
+}
+
+.vision,
+.mission,
+.value {
+  background-color: #e9f8f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vision .container,
+.value .container {
+  width: 1100px;
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission .container {
+  width: 1400px;
+  margin: 5% auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.about .separator {
+  text-align: start;
+}
+.about .line {
+  width: 40px;
+  height: 3px;
+}
+
+.vision-content,
+.value-content {
+  width: 50%;
+  text-align: left;
+  padding-right: 70px;
+}
+.mission-content {
+  width: 50%;
+  text-align: left;
+}
+.vision-image,
+.mission-image,
+.value-image {
+  width: 700px;
+}
+
+.vision-image img,
+.mission-image img,
+.value-image img {
+  width: 100%;
+  height: auto;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+}
+
+.darkgray-text {
+  color: #5b6770;
+  font-weight: 100;
+}
+
+.darkgray-text h4 {
+  font-size: 34px;
+}
+
+.darkgray-text p {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.vision .separator,
+.mission p,
+.value p {
+  margin-top: 50px;
+}
+
+.service .top-wrapper {
+  height: 60vh;
+  color: #fff;
+  position: relative;
+}
+
+.service .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../images/テクノロジー３.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(70%);
+  z-index: 1;
+}
+.service .container {
+  z-index: 2;
+}
+
+.service-title {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9f8f9;
+}
+.service-title .container {
+  width: 85%;
+}
+.service-title h1 {
+  font-size: 60px;
+}
+
+.service-title p {
+  margin-top: 30px;
+}
+
+.service-school,
+.division {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.division {
+  background-color: #e9f8f9;
+  height: 70vh;
+}
+
+.service-school .container,
+.division .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.division .container {
+  max-width: 900px;
+  margin: 10px auto;
+}
+
+.school-engineer,
+.school-marketer {
+  margin: 0 20px;
+}
+
+.job-placement,
+.human-solutions,
+.bpo-division,
+.nursery-division {
+  margin: 0 10px;
+}
+
+.school-image {
+  width: 550px;
+  height: 430px;
+  position: relative;
+  overflow: hidden;
+}
+.division-image {
+  width: 550px;
+  height: 430px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+}
+
+.school-image img,
+.division-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.school-text {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  text-align: start;
+  padding: 0 30px;
+}
+.school-text h3 {
+  font-size: 24px;
+}
+
+.school-text p,
+.division-text p {
+  font-size: 16px;
+}
+
+.division-text {
+  width: 85%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px auto;
+}
+.division-text h5,
+.blog-wrapper h5 {
+  font-size: 24px;
+}
+.division .btn:hover {
+  color: #fff;
+}
+
+.company {
+  background-color: #e9f8f9;
+}
+.company .top-wrapper {
+  background-image: url(../images/LINE_ALBUM_2023.8-新オフィスでの撮影_231024.jpg);
+  height: 60vh;
+  color: #fff;
+}
+
+.company-container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: start;
+  padding: 10px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: solid 1px #e0e0e0;
+  text-align: start;
+  padding: 10px;
+}
+.office-name {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.access .darkgray-text {
+  margin: 20px 0;
+}
+.access span {
+  margin-right: 68px;
+}
+
+.blog {
+  background-color: #e9f8f9;
+  position: relative;
+  height: 680vh;
+}
+
+.blog-wrapper {
+  background-color: #fff;
+  height: auto;
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  right: 20px;
+  bottom: 50px;
+}
+.blog-top-title,
+.blog-history,
+.blog-category {
+  width: 90%;
+  padding-top: 5%;
+  margin: 0 auto;
+}
+
+.blog-line {
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: black;
+}
+
+.blog-item {
+  width: 80%;
+  min-width: 800px;
+  padding: 5% 0;
+  margin: 0 auto;
+  text-align: start;
+  margin-left: 12%;
+}
+.blog-item h3 {
+  color: #3aa6b9;
+  font-size: 34px;
+}
+.blog-item img {
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px 0;
+}
+.blog-wrapper h5 {
+  font-size: 20px;
+}
+.blog-wrapper ul {
+  margin: 20px 5%;
+}
+.blog-wrapper a {
+  color: #3aa6b9;
+  font-size: 16px;
+}
+
+.contact .top-wrapper {
+  background-image: url(../images/コールセンター-scaled.jpg);
+  height: 60vh;
+  color: #fff;
+}
+
+.input-field {
+  background-color: #e9f8f9;
+  color: #454f5e;
+}
+.input-field .container {
+  min-width: 800px;
+  padding: 0 15%;
+  text-align: start;
+}
+.input-field table {
+  margin-top: 120px;
+  width: 100%;
+  color: #5b6770;
+}
+.input-field th,
+.input-field td {
+  padding: 15px;
+}
+
+.input-field th {
+  width: 25%;
+  min-width: 70px;
+}
+
+.input-field .radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field .radio-group label {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input-field input,
+.input-field textarea {
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+}
+.input-field input:focus,
+.input-field textarea:focus {
+  outline: none;
+  border: 2px dashed #e0e0e0;
+}
+
+.input-field input[type="radio"],
+.input-field input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+.input-field input[type="text"],
+.input-field input[type="email"],
+.input-field input[type="tel"] {
+  width: 100%;
+  max-width: 500px;
+}
+.submit-btn {
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .container h1,
+  .blog-content h1,
+  .about .top-wrapper p,
+  .service .top-wrapper p,
+  .company .top-wrapper p,
+  .contact .top-wrapper p {
+    font-size: 50px;
+  }
+
+  .blog-container h2,
+  .container h2,
+  .company h2 {
+    font-size: 48px;
+  }
+
+  .container h3 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .blog-content h4,
+  .recruit h4,
+  .about h4,
+  .blog-item h3 {
+    font-size: 34px;
+  }
+
+  .heading-title h3 {
+    font-size: 32px;
+  }
+  .darkgray-text p {
+    font-size: 12px;
+  }
+
+  .aboutus {
+    height: 400px;
+  }
+
+  .hr-domain {
+    height: 70vh;
+  }
+
+  .tech-domain {
+    height: 70vh;
+  }
+
+  .company-content {
+    height: 35vh;
+  }
+
+  .company-content .background {
+    background-size: 100% auto;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  .recruitment-information-image {
+    width: 50%;
+    margin-left: 0;
+  }
+  .top .top-wrapper {
+    height: 50vh;
+    position: relative;
+  }
+  .top .top-wrapper .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  #main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  #sticky-header {
+    display: none;
+  }
+
+  #hamburger-menu {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger-menu-empty {
+    width: 20%;
+  }
+  #menu-toggle:checked ~ .navigation {
+    display: flex;
+  }
+
+  .navigation {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    overflow-y: auto;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigation li {
+    height: auto;
+    min-width: 350px;
+  }
+
+  .navigation li a {
+    display: block;
+    text-align: center;
+  }
+  .navigation a {
+    padding-bottom: 0;
+  }
+
+  .navigation li:hover {
+    background-color: #222;
+    color: #fff;
+  }
+
+  #menu-toggle:checked ~ .logo {
+    align-items: center;
+  }
+
+  .menu-button {
+    position: fixed;
+    top: 15px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    z-index: 100;
+    background-color: #f2f2f2;
+  }
+
+  .menu-button span,
+  .menu-button span:before,
+  .menu-button span:after {
+    content: "";
+    display: block;
+    height: 2.5px;
+    width: 17px;
+    border-radius: 3px;
+    background-color: black;
+    position: absolute;
+  }
+  .menu-button span:before {
+    bottom: 5px;
+  }
+  .menu-button span:after {
+    top: 5px;
+  }
+  #menu-toggle:checked ~ .menu-button span {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  #menu-toggle:checked ~ .menu-button span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  #menu-toggle:checked ~ .menu-button span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .about .top-wrapper,
+  .service .top-wrapper,
+  .company .top-wrapper,
+  .contact .top-wrapper {
+    height: 35vh;
+  }
+
+  .vision .container,
+  .value .container {
+    width: 100%;
+  }
+  .mission .container {
+    width: 80%;
+  }
+
+  .vision-image,
+  .mission-image,
+  .value-image {
+    width: 400px;
+    min-width: 400px;
+    object-fit: cover;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .service-title h1 {
+    font-size: 60px;
+  }
+
+  .school-text h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .service-school .container {
+    width: 100%;
+  }
+
+  .school-image {
+    width: 400px;
+    background-position: center;
+  }
+  .division-image {
+    width: 400px;
+    height: 400px;
+  }
+
+  .school-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .school-text p {
+    font-size: 14px;
+  }
+  .school-text p {
+    margin-top: 14px;
+  }
+
+  .blog {
+    height: 520vh;
+  }
+
+  .blog-item {
+    min-width: 600px;
+  }
+  .blog-wrapper a {
+    font-size: 14px;
+  }
+
+  .input-field .container {
+    padding: 0 10px;
+    margin: 0;
+  }
+}
