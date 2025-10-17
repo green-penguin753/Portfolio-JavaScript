@@ -28,10 +28,11 @@ mask.addEventListener("click", () => {
   close.click();
 });
 
-document.getElementById("form").onsubmit = function (event) {
+document.querySelector("#form").addEventListener("submit", (event) => {
   event.preventDefault();
 
-  let inputForm = document.getElementById("form").content.value;
+  const form = event.target;
+  const inputValue = form.querySelector("[name='content']").value;
 
-  document.getElementById("output").textContent = `${inputForm}`;
-};
+  document.querySelector("#output").textContent = inputValue;
+});

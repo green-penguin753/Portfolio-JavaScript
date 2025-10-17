@@ -11,7 +11,7 @@
   background: #fff;
   width: 80%;
   height: 80%;
-  position: fixed;
+  position: absolute;
   inset: 10% 0 auto;
   margin: auto;
   z-index: 9999;
@@ -21,35 +21,15 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  overflow-wrap: break-word;
 }
 
 #close {
   position: absolute;
   top: 10px;
   right: 20px;
-  width: 30px;
-  height: 30px;
+  font-size: 30px;
   background-color: transparent;
-  border: none;
   cursor: pointer;
-}
-
-#close::before,
-#close::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2px;
-  height: 30px;
-  background-color: #333;
-  transform-origin: center;
-}
-
-#close::before {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-#close::after {
-  transform: translate(-50%, -50%) rotate(-45deg);
+  border: none;
 }
