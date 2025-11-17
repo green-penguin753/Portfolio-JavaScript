@@ -35,7 +35,6 @@ setInterval(() => {
   slides[current].classList.add("image-visible");
 }, 4000);
 
-document.querySelectorAll(".slide");
 for (let i = 0; i < slides.length; i++) {
   slides[i].animate(
     [
